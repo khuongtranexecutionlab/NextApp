@@ -5,13 +5,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Research SSG, SSR, CSR and ISR. In what cases do we use those methods?
+
+SSG (Static Site Generation):
+  SSG is suitable for content-heavy websites or blogs where content changes infrequently. Its also great for sites with a large number of pages that dont require real-time data.
+
+SSR (Server-Side Rendering):
+    SSR is ideal for applications with frequently changing content or personalized user experiences. Its a good choice when SEO is important, as search engines can index the server-rendered content.
+
+
+CSR (Client-Side Rendering):
+    CSR is suitable for highly interactive web applications where real-time data updates are crucial. It can improve user experience by providing faster navigation within the app once the initial load is complete.
+
+ISR (Incremental Static Regeneration):
+    ISR is a good choice for websites with dynamic content that doesnt change frequently but still requires updates. Its often used for e-commerce product pages or news articles. You can set a revalidation interval to keep the content up-to-date.
+    
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
