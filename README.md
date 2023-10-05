@@ -26,23 +26,16 @@ ISR (Incremental Static Regeneration):
 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Research getInitialProps, getStaticProps, getServerSideProps. In what cases do we use those methods?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+getInitialProps:
+    This method can be used in both client-side and server-side rendering (SSR) environments
+    Use getInitialProps when you need to fetch data during the server-side rendering process or on the client side for initial page load. It's a versatile method that works for various scenarios, including fetching data from APIs, databases, or any other source.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+getStaticProps: 
+    This method is used for static site generation (SSG).
+    Use getStaticProps when you want to pre-render a page at build time with data that doesn't change frequently. It's suitable for content-heavy websites, blogs, and e-commerce product pages where the content remains mostly static between builds.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+getServerSideProps:
+    This method is used for server-side rendering (SSR)
+    Use getServerSideProps when you need to fetch data for a page on each request, ensuring that the content is always up-to-date and can include user-specific data. This is useful for personalized or frequently changing content.
