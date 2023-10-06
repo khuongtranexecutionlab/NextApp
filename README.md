@@ -39,3 +39,20 @@ getStaticProps:
 getServerSideProps:
     This method is used for server-side rendering (SSR)
     Use getServerSideProps when you need to fetch data for a page on each request, ensuring that the content is always up-to-date and can include user-specific data. This is useful for personalized or frequently changing content.
+
+    Research git merge, git rebase and different between them : 
+        Merge: Combines changes from one branch into another, creating a new commit.
+        Rebase: Moves commit history from one branch onto another, creating a linear commit history.
+
+------------------------------------------ GIT ------------------------------------
+
+    Revert latest commit:
+        git reset --hard HEAD~1 or git revert HEAD
+        Git push --force-with-lease: Safer option, checks remote status before force push.
+        Git push -f: Standard force push, does not check remote status.
+
+    Remove any commit:
+        Use git reset, git revert, or git cherry-pick -m.
+
+    Squash commit:
+        Use git rebase -i and change pick to squash for the commits to be combined.
