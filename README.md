@@ -40,11 +40,12 @@ getServerSideProps:
     This method is used for server-side rendering (SSR)
     Use getServerSideProps when you need to fetch data for a page on each request, ensuring that the content is always up-to-date and can include user-specific data. This is useful for personalized or frequently changing content.
 
+------------------------------------------ GIT ------------------------------------
+
     Research git merge, git rebase and different between them : 
         Merge: Combines changes from one branch into another, creating a new commit.
         Rebase: Moves commit history from one branch onto another, creating a linear commit history.
 
------------------------------------------- GIT ------------------------------------
 
     Revert latest commit:
         git reset --hard HEAD~1 or git revert HEAD
